@@ -2,7 +2,7 @@
 title: Module's Requirements
 ---
 
-## Module Requirements
+## Distance Sensor Module Requirements
 This module provides distance and range sensing for obstacle detection and reaction time for the amphibious rover system. Using a serial distance sensor and a PIC18F47K42 microcontroller, the module reports distance measurements and obstacle status to the motion control subsystem for safe navigation.
 
 | Requirement Description | Measure of Threshold (Minimum) | Target Measure | Stretch Requirement (Y-N) |
