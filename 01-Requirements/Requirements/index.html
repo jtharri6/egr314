@@ -798,75 +798,75 @@
 <th>Requirement Description</th>
 <th>Measure of Threshold (Minimum)</th>
 <th>Target Measure</th>
-<th style="text-align: center;">Stretch Requirement (Y-N)</th>
+<th>Stretch Requirement (Y/N)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>3.3V power regulator on module</td>
 <td>Provides 3.3V to MCU and sensor</td>
-<td>3.3 V</td>
-<td style="text-align: center;">N</td>
+<td>Stable 3.3 V output</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Microcontroller type</td>
 <td>PIC18F47K42 is powered and programmable</td>
 <td>PIC18F47K42 runs sensor and UART logic reliably</td>
-<td style="text-align: center;">N</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Microcontroller role</td>
 <td>PIC processes distance data from sensor</td>
 <td>PIC handles distance logic and messaging</td>
-<td style="text-align: center;">N</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Serial distance sensor</td>
 <td>Sensor communicates using serial interface</td>
 <td>Sensor provides consistent distance readings</td>
-<td style="text-align: center;">N</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Distance sensing for obstacle avoidance</td>
-<td>Detects nearby obstacles</td>
-<td>Reliable detection for stopping or avoiding</td>
-<td style="text-align: center;">N</td>
+<td>Detects obstacles within 2 ft</td>
+<td>Reliable stopping or avoidance at 3 ft</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Distance sensing for early warning</td>
-<td>Detects obstacles at farther range</td>
-<td>Long Range Navigation</td>
-<td style="text-align: center;">Y</td>
+<td>Detects obstacles within 8 ft</td>
+<td>Early navigation awareness at 12 ft</td>
+<td>Y</td>
 </tr>
 <tr>
 <td>Reaction time support</td>
 <td>Sensor updates during rover motion</td>
-<td>fast response/update</td>
-<td style="text-align: center;">N</td>
+<td>Fast response and update rate</td>
+<td>N</td>
 </tr>
 <tr>
 <td>UART communication to system</td>
 <td>Sends distance and obstacle status</td>
-<td>Reliable messages to controller</td>
-<td style="text-align: center;">N</td>
+<td>Reliable messages to main controller</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Motor</td>
-<td>No motor used in this module</td>
+<td>No motor used in this subsystem</td>
 <td>N/A</td>
-<td style="text-align: center;">N</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Physical integration</td>
 <td>Module mounts securely inside rover housing</td>
 <td>Protected or adjustable sensor mount</td>
-<td style="text-align: center;">Y</td>
+<td>Y</td>
 </tr>
 <tr>
 <td>Testing</td>
-<td>Functions in life like environment</td>
-<td>Functions near water/splash conditions</td>
-<td style="text-align: center;">Y</td>
+<td>Functions in life like conditions</td>
+<td>Functions near water and splash environments</td>
+<td>Y</td>
 </tr>
 </tbody>
 </table>
