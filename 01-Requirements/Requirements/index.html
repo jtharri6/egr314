@@ -791,40 +791,82 @@
   <h1>Module's Requirements</h1>
 
 <h2 id="module-requirements">Module Requirements</h2>
-<p>The following sections document the requirements that the this module need to fulfills to .....</p>
+<p>This module provides distance and range sensing for obstacle detection and reaction time for the amphibious rover system. Using a serial distance sensor and a PIC18F47K42 microcontroller, the module reports distance measurements and obstacle status to the motion control subsystem for safe navigation.</p>
 <table>
 <thead>
 <tr>
-<th><strong>Requirement Description</strong></th>
-<th><strong>Measure of<br> Threshold</strong></th>
-<th><strong>Target<br>Measure</strong></th>
-<th style="text-align: center;"><strong>Stretch<br>Requirement<br>(Y-N)</strong></th>
+<th>Requirement Description</th>
+<th>Measure of Threshold (Minimum)</th>
+<th>Target Measure</th>
+<th style="text-align: center;">Stretch Requirement (Y-N)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Surface mounted, 3.3V switching power regulatore</td>
-<td>3.2 Volts</td>
-<td>3.3 Volts</td>
-<td style="text-align: center;">No</td>
+<td>3.3V power regulator on module</td>
+<td>Provides 3.3V to MCU and sensor</td>
+<td>3.3 V</td>
+<td style="text-align: center;">N</td>
 </tr>
 <tr>
-<td>Surface mounted microcontroller</td>
-<td>1 PIC or ESP</td>
-<td>8-bit PIC</td>
-<td style="text-align: center;">No</td>
+<td>Microcontroller type</td>
+<td>PIC18F47K42 is powered and programmable</td>
+<td>PIC18F47K42 runs sensor and UART logic reliably</td>
+<td style="text-align: center;">N</td>
 </tr>
 <tr>
-<td>Wireless Communication</td>
-<td>Able to send or receive a Wi-Fi data</td>
-<td>Send and receive Wi-Fi Data to MQTT</td>
-<td style="text-align: center;">Yes</td>
+<td>Microcontroller role</td>
+<td>PIC processes distance data from sensor</td>
+<td>PIC handles distance logic and messaging</td>
+<td style="text-align: center;">N</td>
 </tr>
 <tr>
-<td><em>Rest are items your modules needs to support the task you are covering for the team's device.</em></td>
-<td>---</td>
-<td>---</td>
-<td style="text-align: center;"><strong>NO</strong></td>
+<td>Serial distance sensor</td>
+<td>Sensor communicates using serial interface</td>
+<td>Sensor provides consistent distance readings</td>
+<td style="text-align: center;">N</td>
+</tr>
+<tr>
+<td>Distance sensing for obstacle avoidance</td>
+<td>Detects nearby obstacles</td>
+<td>Reliable detection for stopping or avoiding</td>
+<td style="text-align: center;">N</td>
+</tr>
+<tr>
+<td>Distance sensing for early warning</td>
+<td>Detects obstacles at farther range</td>
+<td>Long Range Navigation</td>
+<td style="text-align: center;">Y</td>
+</tr>
+<tr>
+<td>Reaction time support</td>
+<td>Sensor updates during rover motion</td>
+<td>fast response/update</td>
+<td style="text-align: center;">N</td>
+</tr>
+<tr>
+<td>UART communication to system</td>
+<td>Sends distance and obstacle status</td>
+<td>Reliable messages to controller</td>
+<td style="text-align: center;">N</td>
+</tr>
+<tr>
+<td>Motor</td>
+<td>No motor used in this module</td>
+<td>N/A</td>
+<td style="text-align: center;">N</td>
+</tr>
+<tr>
+<td>Physical integration</td>
+<td>Module mounts securely inside rover housing</td>
+<td>Protected or adjustable sensor mount</td>
+<td style="text-align: center;">Y</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Functions in life like environment</td>
+<td>Functions near water/splash conditions</td>
+<td style="text-align: center;">Y</td>
 </tr>
 </tbody>
 </table>
