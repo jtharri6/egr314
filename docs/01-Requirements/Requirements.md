@@ -18,3 +18,4 @@ This module provides distance and range sensing for obstacle detection and react
 | Motor                                      | No motor used in this subsystem                                     | N/A                                                | N                          |
 | Physical integration                        | Module mounts securely inside rover housing                      | Protected or adjustable sensor mount                | Y                          |
 | Testing                                    | Functions in life like conditions                                | Functions near water and splash environments        | Y                          |
+| Inter module communication | Sends obstacle and distance data to motor subsystem | Enables navigation and motor control decisions | N |
