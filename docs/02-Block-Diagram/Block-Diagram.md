@@ -6,19 +6,9 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+This block diagram shows how the distance module is organized and how it is connected. A ToF distance sensor provides distance measurements to a PIC18F47K42 microcontroller, where the data is processed and indicated using a debug LED. The microcontroller communicates with an ESP32 over UART and is capable of wireless communications. It will be powered by regulated 3.3 V power regulator from a 9V barrel jack supply and headers allow the module to integrate with the rest of the teams system.
 
+## TOF Sensor Module Block Diagram
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
-
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+![Indivial Block diagram ](ind314.png)
