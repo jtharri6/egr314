@@ -16,9 +16,9 @@ title: Module's Selected Major Components
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](1.png)<br>**LMR16006YQ3DDCRQ1** <br><br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814) | \* Fixed 3.3V output <br>\* Wide input range <br>\* stable current for components| \* needs inductor + caps <br>\* layout must be clean |
-| ![](2.png)<br>**TPS560430X3FDBVT** <br><br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS560430X3FDBVT/9861429) | \* Fixed 3.3V output<br>\* Simple style <br>\* Small footprint | \* needs inductor + caps<br>\* layout needs to reduce noise |
-| ![](3.png)<br>**AP63203WU-7**<br><br>[link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426) | \* Fixed 3.3V output<br>\* Big current headroom <br>\* Common part with good docs | \* needs inductor + caps<br>\* requires good PCB layout |
+| ![](1.png)<br>**LMR16006YQ3DDCRQ1** <br><br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814) | \* fixed 3.3V output <br>\* wide input range <br>\* stable current for components| \* needs inductor + caps <br>\* layout must be clean |
+| ![](2.png)<br>**TPS560430X3FDBVT** <br><br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS560430X3FDBVT/9861429) | \* fixed 3.3V output<br>\* simple style <br>\* small footprint | \* needs inductor + caps<br>\* layout needs to reduce noise |
+| ![](3.png)<br>**AP63203WU-7**<br><br>[link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426) | \* fixed 3.3V output<br>\* alot of current <br>\* common part | \* needs inductor + caps<br>\* requires good PCB layout |
 
 **Barrel Jack**
 
@@ -26,7 +26,7 @@ title: Module's Selected Major Components
 |---|---|---|
 | ![](b1.png)<br>**PJ-006A-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A-SMT-TR/408456) | \* standard 2.1mm adapter size<br>\* surface mount<br>\* availability<br>\* rated above 9V | \* tough footprint <br>\* needs strong ground pad support |
 | ![](b2.png)<br>**PJ-006B-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006B-SMT-TR/408457) | \* standard 2.1mm plug<br>\* surface mount<br>\* clean pcb layout | \* small footprint |
-| ![](b3.png)<br>**KLDVX-SMT-02-BTR (2.1mm)**<br>br> $1.40/each<br>[link to product](https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017) | \* Vertical orientation option<br>\* Surface mount<br>\* Strong brand (Kycon) | \* Larger footprint<br>\* Slightly higher cost |
+| ![](b3.png)<br>**KLDVX-SMT-02-BTR (2.1mm)**<br><br>$1.40/each<br>[link to product](https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017) | \* Vertical orientation option<br>\* Surface mount<br>\* Strong brand (Kycon) | \* Larger footprint<br>\* Slightly higher cost |
 
 
 
@@ -46,5 +46,14 @@ title: Module's Selected Major Components
 | ![](l1.png)<br>**LTST-C150GKT** (Green LED) <br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150GKT/269216?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwHEBpBEAXQF8g)| \* easy to solder <br>\* good for power/status indicator<br>\*low current draw | \* requires series resistor |
 | ![](l2.png)<br>**LTST-C150KRKT** (Red LED)<br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150KRKT/386761?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwGkAlfBEAXQF8g)| \* visible error/stop indicator<br>\* low voltage<br>\* easy solder size | \* requires series resistor |
 | ![](l3.png)<br>**LTST-C150TBKT** (Blue LED)<br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150TBKT/388526?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwICEBpBEAXQF8g)| \* clean look<br>\* good for activity/comms indicator <br>\* easy to solder | \* slightly higher voltage |
+
+## Final Components Selection
+
+| Main Components Chosen | Purpose | Reason Chosen |
+|------------------------|----------|---------------|
+| PJ-006A-SMT-TR | 9V power input | standard 2.1mm adapter size, surface mount, and reliable for 9V input |
+| TPS560430X3FDBVT | 3.3V voltage regulation | fixed 3.3V output and small footprint for stable power conversion |
+| VL53L0CXV0DH/1 | Distance sensing (I2C ToF) | widely used ToF sensor that works directly at 3.3V and fits the 2ft to 6ft detection range |
+| LTST-C150KRKT | Debug/status indicator light | visible and low voltage LED that is easy to solder and works well on 3.3V systems |
 
 
