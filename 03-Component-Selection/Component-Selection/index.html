@@ -578,6 +578,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#power-management" class="md-nav__link">
     <span class="md-ellipsis">
       Power Management
@@ -799,6 +808,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#power-management" class="md-nav__link">
     <span class="md-ellipsis">
       Power Management
@@ -839,6 +857,7 @@
   <h1>Module's Selected Major Components</h1>
 
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
+<h3 id="microcontroller">Microcontroller</h3>
 <table>
 <thead>
 <tr>
@@ -849,13 +868,40 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pic.png" data-desc-position="bottom"><img alt="" src="../pic.png"></a><br><strong>PIC18F47K42</strong> (44-TQFP)<br>~$X/each<br><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf">link to product</a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pic.png" data-desc-position="bottom"><img alt="" src="../pic.png"></a><br><strong>PIC18F47K42</strong> <br>$/each<br><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf">link to product</a></td>
 <td>* PIC used in class <br>* easy to use <br>* peripherals for I2C ToF and UART</td>
 <td>* needs good decoupling and 3.3V rail<br>* PCB layout</td>
 </tr>
 </tbody>
 </table>
 <h3 id="power-management">Power Management</h3>
+<p><strong>Regulator</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../1.png" data-desc-position="bottom"><img alt="" src="../1.png"></a><br><strong>LMR16006YQ3DDCRQ1</strong> <br> 4V–40V input <br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814">link to product</a></td>
+<td>* Fixed 3.3V output <br>* Wide input range <br>* stable current for components</td>
+<td>* needs inductor + caps <br>* layout must be clean</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../2.png" data-desc-position="bottom"><img alt="" src="../2.png"></a><br><strong>TPS560430X3FDBVT</strong> <br>Fixed 3.3V<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPS560430X3FDBVT/9861429">link to product</a></td>
+<td>* Fixed 3.3V output<br>* Simple style <br>* Small footprint</td>
+<td>* needs inductor + caps<br>* layout needs to reduce noise</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../3.png" data-desc-position="bottom"><img alt="" src="../3.png"></a><br><strong>AP63203WU-7</strong><br>Fixed 3.3V<br><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426">link to product</a></td>
+<td>* Fixed 3.3V output<br>* Big current headroom <br>* Common part with good docs</td>
+<td>* needs inductor + caps<br>* requires good PCB layout</td>
+</tr>
+</tbody>
+</table>
 <h3 id="sensor">Sensor</h3>
 
 
