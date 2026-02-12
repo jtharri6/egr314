@@ -26,7 +26,7 @@ This page outlines the main components selected for the I2C ToF sensor module, s
 |---|---|---|
 | ![](b1.png)<br>**PJ-006A-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A-SMT-TR/408456) | \* standard 2.1mm adapter size<br>\* surface mount<br>\* availability<br>\* rated above 9V | \* tough footprint <br>\* needs strong ground pad support |
 | ![](b2.png)<br>**PJ-006B-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006B-SMT-TR/408457) | \* standard 2.1mm plug<br>\* surface mount<br>\* clean pcb layout | \* small footprint |
-| ![](b3.png)<br>**KLDVX-SMT-02-BTR (2.1mm)**<br><br>$1.40/each<br>[link to product](https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017) | \* Vertical orientation option<br>\* Surface mount<br>\* Strong brand (Kycon) | \* Larger footprint<br>\* Slightly higher cost |
+| ![](b3.png)<br>**KLDVX-SMT-02-BTR (2.1mm)**<br><br>$1.40/each<br>[link to product](https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017) | \* Vertical orientation option<br>\* surface mount | \* Larger footprint<br>\* Slightly higher cost |
 
 
 
@@ -37,7 +37,7 @@ This page outlines the main components selected for the I2C ToF sensor module, s
 |---|---|---|
 | ![](sen1.png)<br>**VL53L0CXV0DH/1**<br><br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L0CXV0DH-1/6023691)| \* widely used ToF sensor<br>\* works directly at 3.3V<br>\* good for 2-6 ft detection | \* Small <br>\* Requires good PCB footprint |
 | ![](sen2.png)<br>**VL53L1CXV0FY/1**<br><br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L1CXV0FY-1/8258055?s=N4IgTCBcDaIGoBkCsBmBBGAwgDTgBgDEBNAenRAF0BfIA)| \* long range capability<br>\* adjustable timing<br>\* 3.3V compatible | \* small <br>\* configuration is complex |
-| ![](sen3.png)<br>**TMF8821** <br><br>[link to product](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TMF8821-1AM/16285681) | \* multi zone detection<br>\* 3.3V compatible<br>\* fits requirements| \* Small package<br>\* Requires good PCB layout |
+| ![](sen3.png)<br>**TMF8821** <br><br>[link to product](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TMF8821-1AM/16285681) | \* multi zone detection<br>\* 3.3V compatible<br>\* fits requirements| \* small <br>\* Requires good PCB layout |
 
 ### LED Debug Light ###
 
