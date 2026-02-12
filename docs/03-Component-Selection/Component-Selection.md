@@ -24,7 +24,7 @@ title: Module's Selected Major Components
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](b1.png)<br>**PJ-006A-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A-SMT-TR/408456) | \* standard 2.1mm adapter size<br>\* surface mount<br>\* availability<br>\* rated above 9V | \* touch footprint <br>\* needs strong ground pad support |
+| ![](b1.png)<br>**PJ-006A-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A-SMT-TR/408456) | \* standard 2.1mm adapter size<br>\* surface mount<br>\* availability<br>\* rated above 9V | \* tough footprint <br>\* needs strong ground pad support |
 | ![](b2.png)<br>**PJ-006B-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006B-SMT-TR/408457) | \* standard 2.1mm plug<br>\* surface mount<br>\* clean pcb layout | \* small footprint |
 | ![](b3.png)<br>**KLDVX-SMT-02-BTR (2.1mm)**<br>br> $1.40/each<br>[link to product](https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017) | \* Vertical orientation option<br>\* Surface mount<br>\* Strong brand (Kycon) | \* Larger footprint<br>\* Slightly higher cost |
 
@@ -39,5 +39,12 @@ title: Module's Selected Major Components
 | ![](sen2.png)<br>**VL53L1CXV0FY/1**<br><br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L1CXV0FY-1/8258055?s=N4IgTCBcDaIGoBkCsBmBBGAwgDTgBgDEBNAenRAF0BfIA)| \* long range capability<br>\* adjustable timing<br>\* 3.3V compatible | \* small <br>\* configuration is complex |
 | ![](sen3.png)<br>**TMF8821** <br><br>[link to product](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TMF8821-1AM/16285681) | \* multi zone detection<br>\* 3.3V compatible<br>\* fits requirements| \* Small package<br>\* Requires good PCB layout |
 
+### LED Debug Light ###
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](l1.png)<br>**LTST-C150GKT** (Green LED) <br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150GKT/269216?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwHEBpBEAXQF8g)| \* easy to solder <br>\* good for power/status indicator<br>\*low current draw | \* requires series resistor |
+| ![](l2.png)<br>**LTST-C150KRKT** (Red LED)<br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150KRKT/386761?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwGkAlfBEAXQF8g)| \* visible error/stop indicator<br>\* low voltage<br>\* easy solder size | \* requires series resistor |
+| ![](l3.png)<br>**LTST-C150TBKT** (Blue LED)<br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150TBKT/388526?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwICEBpBEAXQF8g)| \* clean look<br>\* good for activity/comms indicator <br>\* easy to solder | \* slightly higher voltage |
 
 
