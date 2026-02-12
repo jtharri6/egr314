@@ -20,6 +20,15 @@ title: Module's Selected Major Components
 | ![](2.png)<br>**TPS560430X3FDBVT** <br><br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS560430X3FDBVT/9861429) | \* Fixed 3.3V output<br>\* Simple style <br>\* Small footprint | \* needs inductor + caps<br>\* layout needs to reduce noise |
 | ![](3.png)<br>**AP63203WU-7**<br><br>[link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426) | \* Fixed 3.3V output<br>\* Big current headroom <br>\* Common part with good docs | \* needs inductor + caps<br>\* requires good PCB layout |
 
+**Barrel Jack**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](b1.png)<br>**PJ-006A-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A-SMT-TR/408456) | \* standard 2.1mm adapter size<br>\* surface mount<br>\* availability<br>\* rated above 9V | \* touch footprint <br>\* needs strong ground pad support |
+| ![](b2.png)<br>**PJ-006B-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006B-SMT-TR/408457) | \* standard 2.1mm plug<br>\* surface mount<br>\* clean pcb layout | \* small footprint |
+| ![](b3.png)<br>**KLDVX-SMT-02-BTR (2.1mm)**<br>br> $1.40/each<br>[link to product](https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017) | \* Vertical orientation option<br>\* Surface mount<br>\* Strong brand (Kycon) | \* Larger footprint<br>\* Slightly higher cost |
+
+
 
 
 ### I2C (ToF) Sensor
