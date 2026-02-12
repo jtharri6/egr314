@@ -618,6 +618,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#final-components-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Components Selection
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -857,6 +866,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#final-components-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Components Selection
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -905,17 +923,17 @@
 <tbody>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../1.png" data-desc-position="bottom"><img alt="" src="../1.png"></a><br><strong>LMR16006YQ3DDCRQ1</strong> <br><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814">link to product</a></td>
-<td>* Fixed 3.3V output <br>* Wide input range <br>* stable current for components</td>
+<td>* fixed 3.3V output <br>* wide input range <br>* stable current for components</td>
 <td>* needs inductor + caps <br>* layout must be clean</td>
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../2.png" data-desc-position="bottom"><img alt="" src="../2.png"></a><br><strong>TPS560430X3FDBVT</strong> <br><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPS560430X3FDBVT/9861429">link to product</a></td>
-<td>* Fixed 3.3V output<br>* Simple style <br>* Small footprint</td>
+<td>* fixed 3.3V output<br>* simple style <br>* small footprint</td>
 <td>* needs inductor + caps<br>* layout needs to reduce noise</td>
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../3.png" data-desc-position="bottom"><img alt="" src="../3.png"></a><br><strong>AP63203WU-7</strong><br><br><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426">link to product</a></td>
-<td>* Fixed 3.3V output<br>* Big current headroom <br>* Common part with good docs</td>
+<td>* fixed 3.3V output<br>* alot of current <br>* common part</td>
 <td>* needs inductor + caps<br>* requires good PCB layout</td>
 </tr>
 </tbody>
@@ -941,7 +959,7 @@
 <td>* small footprint</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../b3.png" data-desc-position="bottom"><img alt="" src="../b3.png"></a><br><strong>KLDVX-SMT-02-BTR (2.1mm)</strong><br>br&gt; $1.40/each<br><a href="https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017">link to product</a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../b3.png" data-desc-position="bottom"><img alt="" src="../b3.png"></a><br><strong>KLDVX-SMT-02-BTR (2.1mm)</strong><br><br>$1.40/each<br><a href="https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017">link to product</a></td>
 <td>* Vertical orientation option<br>* Surface mount<br>* Strong brand (Kycon)</td>
 <td>* Larger footprint<br>* Slightly higher cost</td>
 </tr>
@@ -998,6 +1016,38 @@
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../l3.png" data-desc-position="bottom"><img alt="" src="../l3.png"></a><br><strong>LTST-C150TBKT</strong> (Blue LED)<br><a href="https://www.digikey.com/en/products/detail/liteon/LTST-C150TBKT/388526?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwICEBpBEAXQF8g">link to product</a></td>
 <td>* clean look<br>* good for activity/comms indicator <br>* easy to solder</td>
 <td>* slightly higher voltage</td>
+</tr>
+</tbody>
+</table>
+<h2 id="final-components-selection">Final Components Selection</h2>
+<table>
+<thead>
+<tr>
+<th>Main Components Chosen</th>
+<th>Purpose</th>
+<th>Reason Chosen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PJ-006A-SMT-TR</td>
+<td>9V power input</td>
+<td>standard 2.1mm adapter size, surface mount, and reliable for 9V input</td>
+</tr>
+<tr>
+<td>TPS560430X3FDBVT</td>
+<td>3.3V voltage regulation</td>
+<td>fixed 3.3V output and small footprint for stable power conversion</td>
+</tr>
+<tr>
+<td>VL53L0CXV0DH/1</td>
+<td>Distance sensing (I2C ToF)</td>
+<td>widely used ToF sensor that works directly at 3.3V and fits the 2ft to 6ft detection range</td>
+</tr>
+<tr>
+<td>LTST-C150KRKT</td>
+<td>Debug/status indicator light</td>
+<td>visible and low voltage LED that is easy to solder and works well on 3.3V systems</td>
 </tr>
 </tbody>
 </table>
