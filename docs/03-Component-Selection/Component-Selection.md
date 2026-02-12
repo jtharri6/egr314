@@ -12,7 +12,7 @@ title: Module's Selected Major Components
 
 ### Power Management
 
-**Regulator**
+**3.3 V Regulator**
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
@@ -22,6 +22,13 @@ title: Module's Selected Major Components
 
 
 
-### Sensor
+### I2C (ToF) Sensor
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](sen1.png)<br>**VL53L0CXV0DH/1**<br>Up to 2m range <br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L0CXV0DH-1/6023691)| \* widely used ToF sensor<br>\* works directly at 3.3V<br>\* good for 2-6 ft detection<br>\* good documentation | \* Small <br>\* Requires good PCB footprint |
+| ![](sen2.png)<br>**VL53L1CXV0FY/1**<br>Up to 4m range <br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L1CXV0FY-1/8258055?s=N4IgTCBcDaIGoBkCsBmBBGAwgDTgBgDEBNAenRAF0BfIA)| \* long range capability<br>\* adjustable timing<br>\* 3.3V compatible | \* small <br>\* configuration is complex |
+| ![](sen3.png)<br>**TMF8821** <br> 2m range <br>[link to product](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TMF8821-1AM/16285681) | \* multi zone detection<br>\* 3.3V compatible<br>\* fits requirements| \* Small package<br>\* Requires good PCB layout |
+
 
 
