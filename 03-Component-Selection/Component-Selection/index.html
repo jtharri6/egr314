@@ -596,9 +596,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
+  <a href="#i2c-tof-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor
+      I2C (ToF) Sensor
     </span>
   </a>
   
@@ -826,9 +826,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
+  <a href="#i2c-tof-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor
+      I2C (ToF) Sensor
     </span>
   </a>
   
@@ -875,7 +875,7 @@
 </tbody>
 </table>
 <h3 id="power-management">Power Management</h3>
-<p><strong>Regulator</strong></p>
+<p><strong>3.3 V Regulator</strong></p>
 <table>
 <thead>
 <tr>
@@ -902,7 +902,33 @@
 </tr>
 </tbody>
 </table>
-<h3 id="sensor">Sensor</h3>
+<h3 id="i2c-tof-sensor">I2C (ToF) Sensor</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../sen1.png" data-desc-position="bottom"><img alt="" src="../sen1.png"></a><br><strong>VL53L0CXV0DH/1</strong><br>Up to 2m range <br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L0CXV0DH-1/6023691">link to product</a></td>
+<td>* widely used ToF sensor<br>* works directly at 3.3V<br>* good for 2-6 ft detection<br>* good documentation</td>
+<td>* Small <br>* Requires good PCB footprint</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../sen2.png" data-desc-position="bottom"><img alt="" src="../sen2.png"></a><br><strong>VL53L1CXV0FY/1</strong><br>Up to 4m range <br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L1CXV0FY-1/8258055?s=N4IgTCBcDaIGoBkCsBmBBGAwgDTgBgDEBNAenRAF0BfIA">link to product</a></td>
+<td>* long range capability<br>* adjustable timing<br>* 3.3V compatible</td>
+<td>* small <br>* configuration is complex</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../sen3.png" data-desc-position="bottom"><img alt="" src="../sen3.png"></a><br><strong>TMF8821</strong> <br> 2m range <br><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TMF8821-1AM/16285681">link to product</a></td>
+<td>* multi zone detection<br>* 3.3V compatible<br>* fits requirements</td>
+<td>* Small package<br>* Requires good PCB layout</td>
+</tr>
+</tbody>
+</table>
 
 
 
