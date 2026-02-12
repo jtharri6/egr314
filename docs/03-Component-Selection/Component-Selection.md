@@ -2,7 +2,7 @@
 title: Module's Selected Major Components
 ---
 
-## Module's Selected Major Components
+This page outlines the main components selected for the I2C ToF sensor module, starting with the selected microcontroller PIC18F47K42 and the supporting power, sensing, and indicator components used in the design.
 
 ### Microcontroller
 
