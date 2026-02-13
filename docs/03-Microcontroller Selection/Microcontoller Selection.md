@@ -6,17 +6,19 @@ This page describes the selection of the microcontroller used in the sensing mod
 
 ## Selected Microcontoller
 
-**Microcontroller:** PIC18F47K42 (40 pin PDIP)
+Microcontroller: PIC18F47K42 (40 pin PDIP)
 
 The PIC18F47K42 was selected as the final microcontroller for this sensing subsystem because it provides the communication features and flexibility required for this design.
 
 The PIC18F47K42 provides:
+
 - Built in I2C support for reading distance data from the VL53L0X sensor.
 - Multiple UART modules for sending distance and status data to the motor module.
 - More than enough GPIO pins for sensor control and a debug LED.
-- Flexible pin mapping 
-- Reliable operation at 3.3V
-- Support for programming and debugging
+- Flexible pin mapping.
+- Reliable operation at 3.3V.
+- Support for programming and debugging.
+
 
 
 | Peripheral / Resource | # Available | # Needed | Associated Pins |
