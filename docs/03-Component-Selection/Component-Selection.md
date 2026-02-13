@@ -2,13 +2,7 @@
 title: Module's Selected Major Components
 ---
 
-This page outlines the main components selected for the I2C ToF sensor module, starting with the selected microcontroller PIC18F47K42 and the supporting power, sensing, and indicator components used in the design.
-
-### Microcontroller
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](pic.png)<br>**PIC18F47K42** <br><br>[link to product](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf) | \* PIC used in class <br>\* easy to use <br>\* peripherals for I2C ToF and UART | \* needs good decoupling and 3.3V rail<br>\* PCB layout|
+This page outlines the main components selected for the I2C ToF sensor module, starting with the supporting power, sensing, and indicator components used in the design and ending with the selected microcontroller PIC18F47K42. 
 
 ### Power Management
 
@@ -46,6 +40,15 @@ This page outlines the main components selected for the I2C ToF sensor module, s
 | ![](l1.png)<br>**LTST-C150GKT** (Green LED) <br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150GKT/269216?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwHEBpBEAXQF8g)| \* easy to solder <br>\* good for power/status indicator<br>\*low current draw | \* requires series resistor |
 | ![](l2.png)<br>**LTST-C150KRKT** (Red LED)<br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150KRKT/386761?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwGkAlfBEAXQF8g)| \* visible error/stop indicator<br>\* low voltage<br>\* easy solder size | \* requires series resistor |
 | ![](l3.png)<br>**LTST-C150TBKT** (Blue LED)<br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C150TBKT/388526?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwICEBpBEAXQF8g)| \* clean look<br>\* good for activity/comms indicator <br>\* easy to solder | \* slightly higher voltage |
+
+### Microcontroller
+
+Below is my micrcontroller choice, please refer to 
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](pic.png)<br>**PIC18F47K42** <br><br>[link to product](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf) | \* PIC used in class <br>\* easy to use <br>\* peripherals for I2C ToF and UART | \* needs good decoupling and 3.3V rail<br>\* PCB layout|
+
 
 ## Final Components Selection
 
