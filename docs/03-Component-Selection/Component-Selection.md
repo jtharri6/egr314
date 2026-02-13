@@ -43,7 +43,7 @@ This page outlines the main components selected for the I2C ToF sensor module, s
 
 ### Microcontroller
 
-Below is my micrcontroller choice, please refer to 
+Below is my selected microcontroller, for a more detailed explanation please visit the [Microcontroller Selection Page](https://jtharri6.github.io/egr314/03-Microcontroller%20Selection/Microcontoller%20Selection/).
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
