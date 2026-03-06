@@ -923,7 +923,7 @@
   <h1>Module's Requirements</h1>
 
 <h2 id="distance-sensor-module-requirements">Distance Sensor Module Requirements</h2>
-<p>This module provides distance and range sensing for obstacle detection and reaction time for the amphibious rover system. Using a serial distance sensor and a PIC18F47K42 microcontroller, the module reports distance measurements and obstacle status to the motion control subsystem for safe navigation.</p>
+<p>This module provides distance and range sensing for obstacle detection and reaction time for the aquatic exploration system. Using a serial distance sensor and an ESP32 microcontroller, the module reports distance measurements and obstacle status to the motion control subsystem for safe navigation.</p>
 <table>
 <thead>
 <tr>
@@ -942,44 +942,38 @@
 </tr>
 <tr>
 <td>Microcontroller type</td>
-<td>PIC18F47K42 is powered and programmable</td>
-<td>PIC18F47K42 runs sensor and UART logic reliably</td>
+<td>ESP32 is powered and programmable</td>
+<td>ESP32 runs sensor and UART logic reliably</td>
 <td>N</td>
 </tr>
 <tr>
 <td>Microcontroller role</td>
-<td>PIC processes distance data from sensor</td>
-<td>PIC handles distance logic and messaging</td>
+<td>ESP32 processes distance data from sensor</td>
+<td>ESP32 handles distance logic and messaging</td>
 <td>N</td>
 </tr>
 <tr>
 <td>Serial distance sensor</td>
-<td>Sensor communicates using serial interface</td>
+<td>Sensor communicates with ESP32 using I2C</td>
 <td>Sensor provides consistent distance readings</td>
 <td>N</td>
 </tr>
 <tr>
 <td>Distance sensing for obstacle avoidance</td>
-<td>Detects obstacles within 2 ft</td>
-<td>Reliable stopping or avoidance at 3 ft</td>
+<td>Detect obstacle within 1 ft</td>
+<td>Detect obstacle near 2 ft</td>
 <td>N</td>
 </tr>
 <tr>
-<td>Distance sensing for early warning</td>
-<td>Detects obstacles within 8 ft</td>
-<td>Early navigation awareness at 12 ft</td>
-<td>Y</td>
-</tr>
-<tr>
 <td>Reaction time support</td>
-<td>Sensor updates during rover motion</td>
-<td>Fast response and update rate</td>
+<td>Sensor updates while system moves</td>
+<td>Fast response and stable updates</td>
 <td>N</td>
 </tr>
 <tr>
 <td>UART communication to system</td>
-<td>Sends distance and obstacle status</td>
-<td>Reliable messages to main controller</td>
+<td>Sends distance and obstacle status to controller</td>
+<td>Reliable communication with motion subsystem</td>
 <td>N</td>
 </tr>
 <tr>
@@ -990,20 +984,20 @@
 </tr>
 <tr>
 <td>Physical integration</td>
-<td>Module mounts securely inside rover housing</td>
-<td>Protected or adjustable sensor mount</td>
+<td>Module mounts securely in system</td>
+<td>Protected sensor placement</td>
 <td>Y</td>
 </tr>
 <tr>
 <td>Testing</td>
-<td>Functions in life like conditions</td>
-<td>Functions near water and splash environments</td>
+<td>Functions in realistic operating conditions</td>
+<td>Reliable operation during system testing</td>
 <td>Y</td>
 </tr>
 <tr>
-<td>Inter module communication</td>
-<td>Sends obstacle and distance data to motor subsystem</td>
-<td>Enables navigation and motor control decisions</td>
+<td>Inter-module communication</td>
+<td>Sends data to other subsystems</td>
+<td>Supports navigation decisions</td>
 <td>N</td>
 </tr>
 </tbody>
