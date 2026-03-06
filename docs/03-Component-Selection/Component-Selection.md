@@ -18,7 +18,7 @@ This page outlines the main components selected for the I2C ToF sensor module, s
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](b1.png)<br>**PJ-006A-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A-SMT-TR/408456) | \* standard 2.1mm adapter size<br>\* surface mount<br>\* availability<br>\* rated above 9V | \* tough footprint <br>\* needs strong ground pad support |
+| ![](pj.png)<br>**PJ-006A (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A/269296) | \* standard 2.1mm adapter size<br>\* through hole <br>\* availability<br>\* rated above 9V | \* tough footprint <br>\* vertical |
 | ![](b2.png)<br>**PJ-006B-SMT-TR (2.1mm)**<br><br> $0.95/each<br>[link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006B-SMT-TR/408457) | \* standard 2.1mm plug<br>\* surface mount<br>\* clean pcb layout | \* small footprint |
 | ![](b3.png)<br>**KLDVX-SMT-02-BTR (2.1mm)**<br><br>$1.40/each<br>[link to product](https://www.digikey.com/en/products/detail/kycon-inc/KLDVX-SMT-02-BTR/10247017) | \* Vertical orientation option<br>\* surface mount | \* Larger footprint<br>\* Slightly higher cost |
 
@@ -54,7 +54,7 @@ Below is my selected microcontroller, for a more detailed explanation please vis
 
 | Main Components Chosen | Purpose | Reason Chosen |
 |------------------------|----------|---------------|
-| PJ-006A-SMT-TR | 9V power input | standard 2.1mm adapter size, surface mount, and reliable for 9V input |
+| PJ-006A (2.1mm) | 9V power input | standard 2.1mm adapter size, through hole mount, and reliable for 9V input |
 | LM2575T-3.3G | 3.3V voltage regulation | fixed 3.3V output and used in class|
 | SEN0590 | Distance sensing (I2C) | good integrated sensor that works directly at 3.3V and fits the 2ft to 6ft detection range, not complex to solder |
 | LTST-C150KRKT | Debug/status indicator light | visible and low voltage LED that is easy to solder and works well on 3.3V systems |
