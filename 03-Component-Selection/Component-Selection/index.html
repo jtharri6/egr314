@@ -617,9 +617,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#i2c-tof-sensor" class="md-nav__link">
+  <a href="#i2c-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      I2C (ToF) Sensor
+      I2C Sensor
     </span>
   </a>
   
@@ -942,9 +942,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#i2c-tof-sensor" class="md-nav__link">
+  <a href="#i2c-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      I2C (ToF) Sensor
+      I2C Sensor
     </span>
   </a>
   
@@ -994,7 +994,7 @@
 
   <h1>Module's Selected Major Components</h1>
 
-<p>This page outlines the main components selected for the I2C ToF sensor module, starting with the supporting power, sensing, and indicator components used in the design and ending with the selected microcontroller PIC18F47K42. </p>
+<p>This page outlines the main components selected for the I2C ToF sensor module, starting with the supporting power, sensing, and indicator components used in the design and ending with the selected microcontroller ESP32. </p>
 <h3 id="power-management">Power Management</h3>
 <p><strong>3.3 V Regulator</strong></p>
 <table>
@@ -1007,7 +1007,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../1.png" data-desc-position="bottom"><img alt="" src="../1.png"></a><br><strong>LMR16006YQ3DDCRQ1</strong> <br><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814">link to product</a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../vol.png" data-desc-position="bottom"><img alt="" src="../vol.png"></a><br><strong>LM2575T-3.3G</strong> <br><br><a href="https://www.digikey.com/en/products/detail/onsemi/LM2575T-3-3G/1476700">link to product</a></td>
 <td>* fixed 3.3V output <br>* wide input range <br>* stable current for components</td>
 <td>* needs inductor + caps <br>* layout must be clean</td>
 </tr>
@@ -1050,7 +1050,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="i2c-tof-sensor">I2C (ToF) Sensor</h3>
+<h3 id="i2c-sensor">I2C Sensor</h3>
 <table>
 <thead>
 <tr>
@@ -1066,9 +1066,9 @@
 <td>* Small <br>* Requires good PCB footprint</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../sen2.png" data-desc-position="bottom"><img alt="" src="../sen2.png"></a><br><strong>VL53L1CXV0FY/1</strong><br><br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L1CXV0FY-1/8258055?s=N4IgTCBcDaIGoBkCsBmBBGAwgDTgBgDEBNAenRAF0BfIA">link to product</a></td>
-<td>* long range capability<br>* adjustable timing<br>* 3.3V compatible</td>
-<td>* small <br>* configuration is complex</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../senn.png" data-desc-position="bottom"><img alt="" src="../senn.png"></a><br><strong>SEN0590</strong><br><br><a href="https://www.digikey.com/en/products/detail/dfrobot/SEN0590/25558534">link to product</a></td>
+<td>* good range capability<br>* easy soldering <br>* 3.3V compatible</td>
+<td>* compact 4 pin <br>* wired</td>
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../sen3.png" data-desc-position="bottom"><img alt="" src="../sen3.png"></a><br><strong>TMF8821</strong> <br><br><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TMF8821-1AM/16285681">link to product</a></td>
@@ -1116,9 +1116,9 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pic.png" data-desc-position="bottom"><img alt="" src="../pic.png"></a><br><strong>PIC18F47K42</strong> <br><br><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf">link to product</a></td>
-<td>* PIC used in class <br>* easy to use <br>* peripherals for I2C ToF and UART</td>
-<td>* needs good decoupling and 3.3V rail<br>* PCB layout</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pic.png" data-desc-position="bottom"><img alt="" src="../pic.png"></a><br><strong>ESP32-S3-WROOM-1-N4</strong> <br><br><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639?s=N4IgTCBcDaIIwE4BsBWAtAUQMoAUDMYaWeaA6gEoDylAsmnGgHIAsAwgCpMAiIAugL5A">link to product</a></td>
+<td>* ESP32 used in class <br>* easy to use <br>* peripherals for I2C and UART</td>
+<td>* needs good decoupling and 3.3V rail<br>* small PCB layout</td>
 </tr>
 </tbody>
 </table>
@@ -1138,14 +1138,14 @@
 <td>standard 2.1mm adapter size, surface mount, and reliable for 9V input</td>
 </tr>
 <tr>
-<td>TPS560430X3FDBVT</td>
+<td>LM2575T-3.3G</td>
 <td>3.3V voltage regulation</td>
-<td>fixed 3.3V output and small footprint for stable power conversion</td>
+<td>fixed 3.3V output and used in class</td>
 </tr>
 <tr>
-<td>VL53L0CXV0DH/1</td>
-<td>Distance sensing (I2C ToF)</td>
-<td>widely used ToF sensor that works directly at 3.3V and fits the 2ft to 6ft detection range</td>
+<td>SEN0590</td>
+<td>Distance sensing (I2C)</td>
+<td>good integrated sensor that works directly at 3.3V and fits the 2ft to 6ft detection range, not complex to solder</td>
 </tr>
 <tr>
 <td>LTST-C150KRKT</td>
