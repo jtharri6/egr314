@@ -47,7 +47,7 @@ Below is my selected microcontroller, for a more detailed explanation please vis
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](pic.png)<br>**ESP32-S3-WROOM-1-N4** <br><br>[link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639?s=N4IgTCBcDaIIwE4BsBWAtAUQMoAUDMYaWeaA6gEoDylAsmnGgHIAsAwgCpMAiIAugL5A) | \* ESP32 used in class <br>\* easy to use <br>\* peripherals for I2C and UART | \* needs good decoupling and 3.3V rail<br>\* small PCB layout|
+| ![](esp.png)<br>**ESP32-S3-WROOM-1-N4** <br><br>[link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639?s=N4IgTCBcDaIIwE4BsBWAtAUQMoAUDMYaWeaA6gEoDylAsmnGgHIAsAwgCpMAiIAugL5A) | \* ESP32 used in class <br>\* easy to use <br>\* peripherals for I2C and UART | \* needs good decoupling and 3.3V rail<br>\* small PCB layout|
 
 
 ## Final Components Selection
