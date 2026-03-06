@@ -11,4 +11,6 @@ This block diagram shows how the distance module is organized and how it is conn
 
 ## TOF Sensor Module Block Diagram
 
-![Indivial Block diagram ](ind314.png)
+![Indivial Block diagram ](black.png)
+
+The block diagram as a PDF download is available [*here*](block.pdf)
