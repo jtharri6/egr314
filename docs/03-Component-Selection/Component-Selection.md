@@ -2,7 +2,7 @@
 title: Module's Selected Major Components
 ---
 
-This page outlines the main components selected for the I2C ToF sensor module, starting with the supporting power, sensing, and indicator components used in the design and ending with the selected microcontroller PIC18F47K42. 
+This page outlines the main components selected for the I2C ToF sensor module, starting with the supporting power, sensing, and indicator components used in the design and ending with the selected microcontroller ESP32. 
 
 ### Power Management
 
@@ -10,7 +10,7 @@ This page outlines the main components selected for the I2C ToF sensor module, s
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](1.png)<br>**LMR16006YQ3DDCRQ1** <br><br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814) | \* fixed 3.3V output <br>\* wide input range <br>\* stable current for components| \* needs inductor + caps <br>\* layout must be clean |
+| ![](vol.png)<br>**LM2575T-3.3G** <br><br>[link to product](https://www.digikey.com/en/products/detail/onsemi/LM2575T-3-3G/1476700) | \* fixed 3.3V output <br>\* wide input range <br>\* stable current for components| \* needs inductor + caps <br>\* layout must be clean |
 | ![](2.png)<br>**TPS560430X3FDBVT** <br><br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS560430X3FDBVT/9861429) | \* fixed 3.3V output<br>\* simple style <br>\* small footprint | \* needs inductor + caps<br>\* layout needs to reduce noise |
 | ![](3.png)<br>**AP63203WU-7**<br><br>[link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426) | \* fixed 3.3V output<br>\* alot of current <br>\* common part | \* needs inductor + caps<br>\* requires good PCB layout |
 
@@ -25,12 +25,12 @@ This page outlines the main components selected for the I2C ToF sensor module, s
 
 
 
-### I2C (ToF) Sensor
+### I2C Sensor
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
 | ![](sen1.png)<br>**VL53L0CXV0DH/1**<br><br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L0CXV0DH-1/6023691)| \* widely used ToF sensor<br>\* works directly at 3.3V<br>\* good for 2-6 ft detection | \* Small <br>\* Requires good PCB footprint |
-| ![](sen2.png)<br>**VL53L1CXV0FY/1**<br><br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L1CXV0FY-1/8258055?s=N4IgTCBcDaIGoBkCsBmBBGAwgDTgBgDEBNAenRAF0BfIA)| \* long range capability<br>\* adjustable timing<br>\* 3.3V compatible | \* small <br>\* configuration is complex |
+| ![](senn.png)<br>**SEN0590**<br><br>[link to product](https://www.digikey.com/en/products/detail/dfrobot/SEN0590/25558534)| \* good range capability<br>\* easy soldering <br>\* 3.3V compatible | \* compact 4 pin <br>\* wired|
 | ![](sen3.png)<br>**TMF8821** <br><br>[link to product](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TMF8821-1AM/16285681) | \* multi zone detection<br>\* 3.3V compatible<br>\* fits requirements| \* small <br>\* Requires good PCB layout |
 
 ### LED Debug Light ###
@@ -47,7 +47,7 @@ Below is my selected microcontroller, for a more detailed explanation please vis
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](pic.png)<br>**PIC18F47K42** <br><br>[link to product](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf) | \* PIC used in class <br>\* easy to use <br>\* peripherals for I2C ToF and UART | \* needs good decoupling and 3.3V rail<br>\* PCB layout|
+| ![](pic.png)<br>**ESP32-S3-WROOM-1-N4** <br><br>[link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639?s=N4IgTCBcDaIIwE4BsBWAtAUQMoAUDMYaWeaA6gEoDylAsmnGgHIAsAwgCpMAiIAugL5A) | \* ESP32 used in class <br>\* easy to use <br>\* peripherals for I2C and UART | \* needs good decoupling and 3.3V rail<br>\* small PCB layout|
 
 
 ## Final Components Selection
@@ -55,8 +55,8 @@ Below is my selected microcontroller, for a more detailed explanation please vis
 | Main Components Chosen | Purpose | Reason Chosen |
 |------------------------|----------|---------------|
 | PJ-006A-SMT-TR | 9V power input | standard 2.1mm adapter size, surface mount, and reliable for 9V input |
-| TPS560430X3FDBVT | 3.3V voltage regulation | fixed 3.3V output and small footprint for stable power conversion |
-| VL53L0CXV0DH/1 | Distance sensing (I2C ToF) | widely used ToF sensor that works directly at 3.3V and fits the 2ft to 6ft detection range |
+| LM2575T-3.3G | 3.3V voltage regulation | fixed 3.3V output and used in class|
+| SEN0590 | Distance sensing (I2C) | good integrated sensor that works directly at 3.3V and fits the 2ft to 6ft detection range, not complex to solder |
 | LTST-C150KRKT | Debug/status indicator light | visible and low voltage LED that is easy to solder and works well on 3.3V systems |
 
 
