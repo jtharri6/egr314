@@ -30,6 +30,10 @@ This datasheet describes the design and functionality of the distance sensing mo
 
 * My primary responsibility is the development of the distance sensing subsystem. This work includes selecting an appropriate distance sensor, integrating the sensor with the system microcontroller, and designing the required circuitry for communication. The module communicates with the microcontroller using an I2C interface and provides real-time distance measurements that support obstacle detection and situational awareness during its operation.
 
+### Helpful Links
+
+* Distance Sensor Module BOM: [Link](https://jtharri6.github.io/egr314/05-BOM/BOM/)
+
 * Distance Sensor Module Schematic: [Link](https://jtharri6.github.io/egr314/02-Block-Diagram/Block-Diagram/)
 
 * Distance Sensor Module Block Diagram: [Link](https://jtharri6.github.io/egr314/08-Schematic/schematic/)
