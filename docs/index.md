@@ -32,7 +32,7 @@ This datasheet describes the design and functionality of the distance sensing mo
 
 ### Helpful Links
 
-* Distance Sensor Module Block Diagram: [Link] (https://jtharri6.github.io/egr314/02-Block-Diagram/Block-Diagram/)
+* Distance Sensor Module Block Diagram: [Link](https://jtharri6.github.io/egr314/02-Block-Diagram/Block-Diagram/)
 
 * Distance Sensor Component Selection: [Link](https://jtharri6.github.io/egr314/03-Component-Selection/Component-Selection/)
 
