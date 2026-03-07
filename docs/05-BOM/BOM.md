@@ -27,3 +27,7 @@ The following Bill of Materials lists all electronic components used in the dist
 | FUSE BRD MNT 5A 125VAC 63VDC | 2 | $0.39 | $0.78 | C1F5 | DigiKey | F1 |
 | SWITCH TACTILE SPST-NO | 4 | $0.20 | $0.80 | PTS636SL43SMTR | DigiKey | SW1, SW2 |
 | RF TXRX MODULE ESP32-S3 | 1 | $5.06 | $5.06 | ESP32-S3-WROOM-1-N4 | DigiKey | U2 |
+| LED RED 1206 SMD | 2 | $0.10 | $0.20 | LTST-C150KRKT | DigiKey | LED2 |
+| LED YELLOW 1206 SMD | 2 | $0.10 | $0.20 | LTST-C150KSKT | DigiKey | LED1 |
+| LED GREEN 1206 SMD | 2 | $0.10 | $0.20 | LTST-C150KGKT | DigiKey | LED3 |
+| MINI LASER DISTANCE RANGE SENSOR | 1 | $13.62 | $13.62 | SEN0590 | DigiKey | U5 |
