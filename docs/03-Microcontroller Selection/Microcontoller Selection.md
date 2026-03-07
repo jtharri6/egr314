@@ -2,7 +2,7 @@
 title: Microcontroller Selection
 ---
 
-This page describes the selection of the microcontroller used in the sensing module. It outlines why the PIC18F47K42 was chosen, the communication required and the necessary pins.
+This page describes the selection of the microcontroller used in the sensing module. It outlines why the ESP32 was chosen, the communication required and the necessary pins.
 
 ## Selected Microcontoller
 
