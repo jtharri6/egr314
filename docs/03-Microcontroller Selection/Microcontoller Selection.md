@@ -6,37 +6,50 @@ This page describes the selection of the microcontroller used in the sensing mod
 
 ## Selected Microcontoller
 
-Microcontroller: PIC18F47K42 (40 pin PDIP)
+Microcontroller: ESP32-S3-WROOM-1-N4
 
-The PIC18F47K42 was selected as the final microcontroller for this sensing subsystem because it provides the communication features and flexibility required for this design.
+The ESP32-S3-WROOM-1-N4 was selected as the final microcontroller for this sensing subsystem because it provides the communication features, processing capability, and flexibility.
 
-The PIC18F47K42 provides:
+The ESP32-S3 provides:
 
-- Built in I2C support for reading distance data from the VL53L0X sensor.
+- Built in I2C support for reading distance data from the distance sensor.
 - Multiple UART modules for sending distance and status data to the motor module.
-- More than enough GPIO pins for sensor control and a debug LED.
-- Flexible pin mapping.
+- Alot GPIO pins for sensor control and status LEDs.
 - Reliable operation at 3.3V.
-- Support for programming and debugging.
+- Integrated USB support for programming and debugging.
 
+## ESP32 Table of Contents
 
+| ESP Info | Answer |
+|---|---|
+| ESP32-S3-WROOM-1-N4 | [Product Link](https://www.espressif.com/en/module/esp32-s3-wroom-1-en) |
+| Datasheet | [ESP32-S3-WROOM-1 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf) |
+| Vendor | [Espressif Systems](https://www.espressif.com/) |
+| Unit cost | About $5.06/each |
+| Supply Voltage Range | 3.0 V ~ 3.6 V |
+| Absolute Maximum current | 355 mA |
+| Maximum GPIO current (per pin) | 40 mA |
+| Supports External Interrupts? | Yes |
+| Programming Hardware | Micro-USB |
 
-| Peripheral / Resource | # Available | # Needed | Associated Pins |
+## Pin layout for ESP32
+
+| Module | # Available | Needed | Associated Pins |
 |---|---:|---:|---|
-| UART | 2 | 1 | TX1-RC6, RX1-RC7  |
-| I2C | 2 | 1 | SCL-RC3, SDA-RC4 (ToF sensor) |
-| GPIO | 35 I/O pins | 2 | RA4-XSHUT, RA5-LED|
-| ADC |  (available) | 0 | Not used |
-
-## MCC Configuration Pin Layout
-
-![mcc pins](pins.png)
+| UART | 3 | 1 | GPIO16 and GPIO17 |
+| I2C | 2 | 1 | GPIO8 and GPIO9 |
+| GPIO | 36 | 8 | 3 LED pins and 5 Headers |
+| USB Programmer | 1 | 1 | GPIO19 and GPIO20 |
 
 ### Communication to the Motor Module
 
-- This sensing module reads the distance value from the ToF sensor using I2C.
-- The processed distance information is sent to the motor control module through UART.
-- The motor module determines how to respond based on the received data including stopping, slowing down, or turning to avoid obstacles.
+### Communication to the Motor Module
+
+- This sensing module reads the distance value from the distance sensor using I2C through the ESP32.
+
+- The ESP32 processes the distance data and sends the information to the motor control module through UART.
+
+- The motor module determines how to respond based on the received distance data, including slowing down, stopping, or knowing its clear to avoid obstacles.
 
 
 
