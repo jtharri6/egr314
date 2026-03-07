@@ -8,7 +8,7 @@ This schematic shows the complete electrical design of the distance sensing modu
 
 
 ![schematic](newsc.png){style width:"350" height:"300;"}
-**Figure 01:I2C ToF Sensor** 
+**Figure 01:I2C Sensor** 
 
 
 ## Resouces
