@@ -663,17 +663,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mcc-configuration-pin-layout" class="md-nav__link">
+  <a href="#esp32-table-of-contents" class="md-nav__link">
     <span class="md-ellipsis">
-      MCC Configuration Pin Layout
+      ESP32 Table of Contents
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="MCC Configuration Pin Layout">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-layout-for-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin layout for ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pin layout for ESP32">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#communication-to-the-motor-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication to the Motor Module
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-to-the-motor-module_1" class="md-nav__link">
     <span class="md-ellipsis">
       Communication to the Motor Module
     </span>
@@ -930,17 +948,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mcc-configuration-pin-layout" class="md-nav__link">
+  <a href="#esp32-table-of-contents" class="md-nav__link">
     <span class="md-ellipsis">
-      MCC Configuration Pin Layout
+      ESP32 Table of Contents
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="MCC Configuration Pin Layout">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-layout-for-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin layout for ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pin layout for ESP32">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#communication-to-the-motor-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication to the Motor Module
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-to-the-motor-module_1" class="md-nav__link">
     <span class="md-ellipsis">
       Communication to the Motor Module
     </span>
@@ -972,60 +1008,112 @@
 
 <p>This page describes the selection of the microcontroller used in the sensing module. It outlines why the PIC18F47K42 was chosen, the communication required and the necessary pins.</p>
 <h2 id="selected-microcontoller">Selected Microcontoller</h2>
-<p>Microcontroller: PIC18F47K42 (40 pin PDIP)</p>
-<p>The PIC18F47K42 was selected as the final microcontroller for this sensing subsystem because it provides the communication features and flexibility required for this design.</p>
-<p>The PIC18F47K42 provides:</p>
+<p>Microcontroller: ESP32-S3-WROOM-1-N4</p>
+<p>The ESP32-S3-WROOM-1-N4 was selected as the final microcontroller for this sensing subsystem because it provides the communication features, processing capability, and flexibility.</p>
+<p>The ESP32-S3 provides:</p>
 <ul>
-<li>Built in I2C support for reading distance data from the VL53L0X sensor.</li>
+<li>Built in I2C support for reading distance data from the distance sensor.</li>
 <li>Multiple UART modules for sending distance and status data to the motor module.</li>
-<li>More than enough GPIO pins for sensor control and a debug LED.</li>
-<li>Flexible pin mapping.</li>
+<li>Alot GPIO pins for sensor control and status LEDs.</li>
 <li>Reliable operation at 3.3V.</li>
-<li>Support for programming and debugging.</li>
+<li>Integrated USB support for programming and debugging.</li>
 </ul>
+<h2 id="esp32-table-of-contents">ESP32 Table of Contents</h2>
 <table>
 <thead>
 <tr>
-<th>Peripheral / Resource</th>
+<th>ESP Info</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESP32-S3-WROOM-1-N4</td>
+<td><a href="https://www.espressif.com/en/module/esp32-s3-wroom-1-en">Product Link</a></td>
+</tr>
+<tr>
+<td>Datasheet</td>
+<td><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">ESP32-S3-WROOM-1 Datasheet</a></td>
+</tr>
+<tr>
+<td>Vendor</td>
+<td><a href="https://www.espressif.com/">Espressif Systems</a></td>
+</tr>
+<tr>
+<td>Unit cost</td>
+<td>About $5.06/each</td>
+</tr>
+<tr>
+<td>Supply Voltage Range</td>
+<td>3.0 V ~ 3.6 V</td>
+</tr>
+<tr>
+<td>Absolute Maximum current</td>
+<td>355 mA</td>
+</tr>
+<tr>
+<td>Maximum GPIO current (per pin)</td>
+<td>40 mA</td>
+</tr>
+<tr>
+<td>Supports External Interrupts?</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Programming Hardware</td>
+<td>Micro-USB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pin-layout-for-esp32">Pin layout for ESP32</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
 <th style="text-align: right;"># Available</th>
-<th style="text-align: right;"># Needed</th>
+<th style="text-align: right;">Needed</th>
 <th>Associated Pins</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>UART</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">1</td>
-<td>TX1-RC6, RX1-RC7</td>
+<td>GPIO16 and GPIO17</td>
 </tr>
 <tr>
 <td>I2C</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">1</td>
-<td>SCL-RC3, SDA-RC4 (ToF sensor)</td>
+<td>GPIO8 and GPIO9</td>
 </tr>
 <tr>
 <td>GPIO</td>
-<td style="text-align: right;">35 I/O pins</td>
-<td style="text-align: right;">2</td>
-<td>RA4-XSHUT, RA5-LED</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">8</td>
+<td>3 LED pins and 5 Headers</td>
 </tr>
 <tr>
-<td>ADC</td>
-<td style="text-align: right;">(available)</td>
-<td style="text-align: right;">0</td>
-<td>Not used</td>
+<td>USB Programmer</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td>GPIO19 and GPIO20</td>
 </tr>
 </tbody>
 </table>
-<h2 id="mcc-configuration-pin-layout">MCC Configuration Pin Layout</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pins.png" data-desc-position="bottom"><img alt="mcc pins" src="../pins.png"></a></p>
 <h3 id="communication-to-the-motor-module">Communication to the Motor Module</h3>
+<h3 id="communication-to-the-motor-module_1">Communication to the Motor Module</h3>
 <ul>
-<li>This sensing module reads the distance value from the ToF sensor using I2C.</li>
-<li>The processed distance information is sent to the motor control module through UART.</li>
-<li>The motor module determines how to respond based on the received data including stopping, slowing down, or turning to avoid obstacles.</li>
+<li>
+<p>This sensing module reads the distance value from the distance sensor using I2C through the ESP32.</p>
+</li>
+<li>
+<p>The ESP32 processes the distance data and sends the information to the motor control module through UART.</p>
+</li>
+<li>
+<p>The motor module determines how to respond based on the received distance data, including slowing down, stopping, or knowing its clear to avoid obstacles.</p>
+</li>
 </ul>
 
 
