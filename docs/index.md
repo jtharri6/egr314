@@ -32,10 +32,12 @@ This datasheet describes the design and functionality of the distance sensing mo
 
 ### Helpful Links
 
+* Distance Sensor Module Block Diagram: [Link](https://jtharri6.github.io/egr314/08-Schematic/schematic/)
+
+* Distance Sensor Component Selection: [Link](https://jtharri6.github.io/egr314/03-Component-Selection/Component-Selection/)
+
 * Distance Sensor Module BOM: [Link](https://jtharri6.github.io/egr314/05-BOM/BOM/)
 
 * Distance Sensor Module Schematic: [Link](https://jtharri6.github.io/egr314/02-Block-Diagram/Block-Diagram/)
-
-* Distance Sensor Module Block Diagram: [Link](https://jtharri6.github.io/egr314/08-Schematic/schematic/)
 
 * ECad Zip folder of the project can be found [*here*](dissen.zip).
