@@ -13,4 +13,4 @@ This schematic shows the complete electrical design of the distance sensing modu
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](distancesensor.pdf), and the Zip folder of the project [*here*](distancesensor.zip).
+The schematic as a PDF download is available [*here*](distancesensor.pdf), and the Zip folder of the project [*here*](dissen.zip).
