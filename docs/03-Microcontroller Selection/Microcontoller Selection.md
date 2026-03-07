@@ -22,7 +22,7 @@ The ESP32-S3 provides:
 
 | ESP Info | Answer |
 |---|---|
-| ESP32-S3-WROOM-1-N4 | [Product Link](https://www.espressif.com/en/module/esp32-s3-wroom-1-en) |
+| ESP32-S3-WROOM-1-N4 | [Product Link](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639?s=N4IgTCBcDaIIwE4BsBWAtAUQMoAUDMYaWeaA6gEoDylAsmnGgHIAsAwgCpMAiIAugL5A) |
 | Datasheet | [ESP32-S3-WROOM-1 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf) |
 | Vendor | [Espressif Systems](https://www.espressif.com/) |
 | Unit cost | About $5.06/each |
