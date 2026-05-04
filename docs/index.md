@@ -30,6 +30,24 @@ This datasheet describes the design and functionality of the distance sensing mo
 
 * My primary responsibility is the development of the distance sensing subsystem. This work includes selecting an appropriate distance sensor, integrating the sensor with the system microcontroller, and designing the required circuitry for communication. The module communicates with the microcontroller using an I2C interface and provides real time distance measurements that support obstacle detection and situational awareness during its operation.
 
+## Project Navigation
+
+Use the links below to quickly access each section:
+
+- [Requirements](https://jtharri6.github.io/egr314/01-Requirements/Requirements/)
+- [Block Diagram](https://jtharri6.github.io/egr314/02-Block-Diagram/Block-Diagram/)
+- [Component Selection](https://jtharri6.github.io/egr314/03-Component-Selection/Component-Selection/)
+- [Microcontroller Selection](https://jtharri6.github.io/egr314/03-Microcontroller%20Selection/Microcontoller%20Selection/)
+- [Bill of Materials (BOM)](https://jtharri6.github.io/egr314/05-BOM/BOM/)
+- [PCB Design](https://jtharri6.github.io/egr314/06-PCB%20Design/PCB%20Design/)
+- [Schematic](https://jtharri6.github.io/egr314/07-Schematic/schematic/)
+- [Power Budget](https://jtharri6.github.io/egr314/08-Power%20Budget/Power%20Budget/)
+- [API](https://jtharri6.github.io/egr314/09-API/API/)
+- [Hardware V2.0](https://jtharri6.github.io/egr314/10-Hardware%20V2.0/Hardware%20V2.0/)
+- [Resources](https://jtharri6.github.io/egr314/11-Resources/Resources/)
+- [Reflection](https://jtharri6.github.io/egr314/12-Reflection/Reflection/)
+- [Appendix](https://jtharri6.github.io/egr314/Appendix/)
+
 ### Helpful Links
 
 * Distance Sensor Module Block Diagram: [Link](https://jtharri6.github.io/egr314/02-Block-Diagram/Block-Diagram/)
