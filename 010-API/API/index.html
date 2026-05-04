@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#api-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -642,9 +642,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#api-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      API Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-uart-packet-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team UART Packet Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-member-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Member IDs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-sent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messages Sent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Messages Sent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-obstacle-state-motor-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Obstacle State (Motor Control)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-distance-value-hmi-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Distance Value (HMI Display)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-received" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messages Received
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-handling-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Handling Rules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Functionality
     </span>
   </a>
   
@@ -1153,9 +1231,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#api-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      API Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-uart-packet-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team UART Packet Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-member-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Member IDs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-sent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messages Sent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Messages Sent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-obstacle-state-motor-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Obstacle State (Motor Control)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-distance-value-hmi-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Distance Value (HMI Display)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-received" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messages Received
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-handling-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Handling Rules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Functionality
     </span>
   </a>
   
@@ -1178,7 +1334,163 @@
 
   <h1>API</h1>
 
-<h2 id="overview">Overview</h2>
+<h2 id="api-overview">API Overview</h2>
+<p>This page describes communication for the distance sensing subsystem within Team 307’s system. The subsystem uses a UART daisy chain protocol through an 8 pin ribbon connector. Messages follow a defined packet structure and are used to transmit obstacle detection data and distance measurements to other subsystems.</p>
+<h2 id="team-uart-packet-format">Team UART Packet Format</h2>
+<table>
+<thead>
+<tr>
+<th>Packet Section</th>
+<th style="text-align: right;">Bytes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start Frame</td>
+<td style="text-align: right;">2</td>
+<td>AZ</td>
+</tr>
+<tr>
+<td>Sender ID</td>
+<td style="text-align: right;">1</td>
+<td>ID of transmitting board</td>
+</tr>
+<tr>
+<td>Receiver ID</td>
+<td style="text-align: right;">1</td>
+<td>ID of intended board</td>
+</tr>
+<tr>
+<td>Message Data</td>
+<td style="text-align: right;">1–58</td>
+<td>Message type and payload</td>
+</tr>
+<tr>
+<td>End Frame</td>
+<td style="text-align: right;">2</td>
+<td>YB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="team-member-ids">Team Member IDs</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Subsystem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>OLED HMI</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Hall Effect</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Pressure Sensor</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Motor Control</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Distance Sensor</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Temperature Sensor</td>
+</tr>
+</tbody>
+</table>
+<h2 id="messages-sent">Messages Sent</h2>
+<h3 id="1-obstacle-state-motor-control">1. Obstacle State (Motor Control)</h3>
+<p>This message is sent to the motor subsystem to control movement behavior.</p>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Data Type</th>
+<th>Possible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>obstacle_state</td>
+<td>string</td>
+<td>FAST, SLOW, STOP</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<p></p><div class="highlight"><pre><span></span><code>AZJGSLOWYB
+</code></pre></div>
+Meaning: send SLOW command from J to G.<p></p>
+<h3 id="2-distance-value-hmi-display">2. Distance Value (HMI Display)</h3>
+<p>This message is sent to the OLED subsystem to display the measured distance.</p>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Data Type</th>
+<th style="text-align: right;">Min Value</th>
+<th style="text-align: right;">Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distance_mm</td>
+<td>uint16_t</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4000</td>
+<td>750</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<p></p><div class="highlight"><pre><span></span><code>AZJA750YB
+</code></pre></div>
+Meaning: send distance value 750 mm from J to A.<p></p>
+<h2 id="messages-received">Messages Received</h2>
+<p>Messages addressed to J are processed. Messages addressed to other valid team IDs are forwarded through the daisy chain network.</p>
+<table>
+<thead>
+<tr>
+<th>Sender</th>
+<th>Receiver</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any valid ID</td>
+<td>J</td>
+<td>Process</td>
+</tr>
+<tr>
+<td>Any valid ID</td>
+<td>Other</td>
+<td>Forward</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-handling-rules">Message Handling Rules</h2>
+<ol>
+<li>Process messages addressed to J  </li>
+<li>Forward messages addressed to other team members  </li>
+<li>Ignore messages originating from J  </li>
+<li>Ignore messages exceeding 64 bytes  </li>
+<li>Ignore messages without valid AZ start or YB end frames  </li>
+<li>Ignore messages from invalid sender IDs  </li>
+</ol>
+<h2 id="api-functionality">API Functionality</h2>
+<p>Distance measurements are obtained from the I2C sensor and converted into FAST, SLOW, or STOP states for motor control. At the same time, the measured distance in millimeters is transmitted to the OLED subsystem for display. This enables obstacle avoidance, real feedback, and coordinated communication through UART.</p>
 
 
 
