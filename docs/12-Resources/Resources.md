@@ -2,8 +2,6 @@
 title: Resources
 ---
 
-## Overview
-
 Below you can find reaources for various steps of the project.
 
 ## Design Files
