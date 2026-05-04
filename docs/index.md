@@ -11,7 +11,7 @@ as part of<br>
 for<br>
 <font size= "5"> Team 307 </font><br>
 
-**Submission: March 06, 2026**
+**Submission: May 04, 2026**
 </center>
 
 ## Introduction
@@ -28,7 +28,7 @@ This datasheet describes the design and functionality of the distance sensing mo
 
 ### My Contribution
 
-* My primary responsibility is the development of the distance sensing subsystem. This work includes selecting an appropriate distance sensor, integrating the sensor with the system microcontroller, and designing the required circuitry for communication. The module communicates with the microcontroller using an I2C interface and provides real-time distance measurements that support obstacle detection and situational awareness during its operation.
+* My primary responsibility is the development of the distance sensing subsystem. This work includes selecting an appropriate distance sensor, integrating the sensor with the system microcontroller, and designing the required circuitry for communication. The module communicates with the microcontroller using an I2C interface and provides real time distance measurements that support obstacle detection and situational awareness during its operation.
 
 ### Helpful Links
 

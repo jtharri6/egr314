@@ -2,7 +2,7 @@
 title: Module's Selected Major Components
 ---
 
-This page outlines the main components selected for the I2C ToF sensor module, starting with the supporting power, sensing, and indicator components used in the design and ending with the selected microcontroller ESP32. 
+This page outlines the main components selected for the I2C sensor module, starting with the supporting power, sensing, and indicator components used in the design and ending with the selected microcontroller ESP32. 
 
 ### Power Management
 
