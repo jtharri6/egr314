@@ -2,7 +2,7 @@
 title: API
 ---
 
-## API Overview
+## Overview
 
 This page describes communication for the distance sensing subsystem within Team 307’s system. The subsystem uses a UART daisy chain protocol through an 8 pin ribbon connector. Messages follow a defined packet structure and are used to transmit obstacle detection data and distance measurements to other subsystems.
 
