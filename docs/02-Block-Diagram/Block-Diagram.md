@@ -13,4 +13,8 @@ This block diagram shows how the distance module is organized and how it is conn
 
 ![Indivial Block diagram ](black.png)
 
+## Decison Making Rationale
+
+The block diagram for the distance sensor subsystem was designed by first identifying the need for obstacle detection and communication with the rest of the team. An ESP32 was selected as the main controller because it can handle both I2C communication with the I2C distance sensor and UART communication. The sensor provides distance data that is processed and used to determine system states, while the LED shows the state changes. A regulated 3.3 V power supply powers the system and standard connectors allow the subsystem to integrate with the rest of the team. Overall, the design meets the product requirements by enabling accurate sensing with an I2C, real time integration and dependability on the system from the rest of the team and communication protocol.
+
 The block diagram as a PDF download is available [*here*](block.pdf)
