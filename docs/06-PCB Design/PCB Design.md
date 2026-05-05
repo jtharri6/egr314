@@ -13,4 +13,7 @@ title: PCB Design
 
 ## Final Design PCB
 
+![Final PCB](pcbfin.png)
+
+## Files
 * ECad Zip folder of the project can be found [*here*](dissen.zip).
