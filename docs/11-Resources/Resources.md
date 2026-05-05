@@ -9,7 +9,7 @@ Below you can find reaources for various steps of the project.
 * ECad Zip folder of the project can be found [*here*](dissen.zip)
 * Gerber Zip folder can be found [*here*](JT_Gerber11.zip).
 
-## Concept Files
+Also check out my appendix page [here.](https://jtharri6.github.io/egr314/Appendix/)
 
 ### 3D Printed Concept
 
