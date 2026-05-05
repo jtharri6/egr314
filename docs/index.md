@@ -48,6 +48,10 @@ Use the links below to quickly access each section:
 - [Reflection](https://jtharri6.github.io/egr314/12-Reflection/Reflection/)
 - [Appendix](https://jtharri6.github.io/egr314/Appendix/)
 
+## Team Picture
+
+![team pic](team.png)
+
 ### Helpful Links
 
 * Distance Sensor Module Block Diagram: [Link](https://jtharri6.github.io/egr314/02-Block-Diagram/Block-Diagram/)

@@ -10,3 +10,9 @@ title: Appendix - Main Page
 ## Team Video Explanation of Project
 
 ## Team Photos
+
+![team work](team1.png)
+
+![team work](team2.png)
+
+![team pic](team.png)
