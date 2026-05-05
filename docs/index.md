@@ -48,7 +48,7 @@ Use the links below to quickly access each section:
 - [Reflection](https://jtharri6.github.io/egr314/12-Reflection/Reflection/)
 - [Appendix](https://jtharri6.github.io/egr314/Appendix/)
 
-## Team Picture
+## Meet The Team!
 
 ![team pic](team.png)
 
