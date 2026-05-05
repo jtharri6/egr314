@@ -11,6 +11,8 @@ Below you can find reaources for various steps of the project.
 
 Also check out my appendix page [here.](https://jtharri6.github.io/egr314/Appendix/)
 
+## Concept Files
+
 ### 3D Printed Concept
 
 ![Bullet Bill ](bullpic307.png)
